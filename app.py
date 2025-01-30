@@ -128,7 +128,7 @@ if st.session_state.zeichnungsdf is not None:
         **Endwert** bei Minute {steigungsergebnis['indexendwert']}: `{steigungsergebnis['end_wert']:.6f}`
     """)
     st.subheader("Auswertung und Erklärung")
-    st.image("Grafik Formel.png", width=400)
+   #  st.image("Grafik Formel.png", width=400)
     st.markdown("Die allgemeine Formel lautet:")
     st.markdown(r"$$\text{Collagenase Activity } \left[\frac{U}{ml}\right] = \left[\frac{U}{ml}\right] = \frac{((\Delta ODc / \Delta T) \times 0.2 \times D) \times DF}{0.53 \times V}$$")
     delta_ODc = round(steigungsergebnis['wert_differenz'], 6)
